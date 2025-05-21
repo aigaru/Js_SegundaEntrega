@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1.2rem 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 8px #a286f7;
+}
+
+button {
+  background: #a286f7;
+  border: none;
+  padding: 0.9rem 1.3rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #5a3ea0;
+}
+
+button:disabled {
+  background: #999;
+  cursor: default;
+}
+
+#welcome-message {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  background: #f44336dd;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Product list & cart styles */
+.product-list {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.product {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-left: 1rem;
+  color: #ffd700;
+}
+
+#cart {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+}
+
+#cart h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-name {
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: #f44336;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #b71c1c;
+}
+
+#total-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #ffd700;
+  text-align: right;
+}
+
+/* New styles for Add Product Form */
+#add-product-form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem}
+
+#add-product-form input {
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+#add-product-form button {
+  width: 100%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login y Carrito de Compras</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="loginTittle">Login</h1>
+    <h3 class="loginTittle">Usuario: pedro</h3>
+    <h3 class="loginTittle">Password: pass</h3>
+    <div id="login-form">
+      <div id="error-msg" class="error" style="display:none;"></div>
+      <input type="text" id="username" placeholder="Usuario" autocomplete="username" />
+      <input type="password" id="password" placeholder="Contraseña" autocomplete="current-password" />
+      <button id="login-btn">Iniciar sesión</button>
+    </div>
+    <div id="welcome" style="display:none;">
+      <h2 id="welcome-message"></h2>
+      <button id="logout-btn" style="margin-bottom: 1.5rem;">Cerrar sesión</button>
+
+      <!-- Listado de Productos -->
+      <div class="product-list">
+        <h2>Listado de Productos</h2>
+        <div id="products-container"></div>
+      </div>
+
+        <!-- Formulario Agregar Productos-->
+        <div id="add-product-form" style="display:none;">
+          <input type="text" id="new-product-name" placeholder="Nombre del producto" required />
+          <input type="number" id="new-product-price" placeholder="Precio del producto" required min="0" step="0.01" />
+          <button id="add-product-btn">Agregar Producto</button>
+        </div>
+
+      <!-- Lista Carrito -->
+      <div id="cart">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <div id="total-price">Total: $0.00</div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./js/brain.js"></script>
+</body>
+</html>
+
+
